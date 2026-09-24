@@ -1,0 +1,77 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+nav {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    max-width: 30px;
+}
+
+.navbar {
+    background-color: $color-header;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.nav-link {
+    color: $color-texto-principal;
+    transition: 0.3s;
+
+    &:hover {
+        color: $color-secundario;
+    }
+
+    &:focus,
+    &:active {
+        color: $color-verde;
+    }
+}
+
+header {
+    nav {
+        ul {
+            li {
+                a {
+                    font-weight: 500;
+
+                    &:hover {
+                        color: $color-secundario;
+                    }
+
+                    &:active {
+                        color: $color-verde;
+                    }
+
+                    &:focus {
+                        color: $color-verde;
+                        outline-color: $color-verde;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@include desktop {
+    .contenedor-footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .info-footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
