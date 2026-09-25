@@ -7,9 +7,9 @@
         transform: scale(1.03);
     }
 
-    &:focus {
-        box-shadow: 0 0 0 3px rgba(2, 89, 15, 0.25);
-    }
+&:focus {
+    box-shadow: 0 0 0 3px $color-focus;
+}
 
     &:active {
         transform: scale(0.98);
