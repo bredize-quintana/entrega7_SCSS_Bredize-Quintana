@@ -80,46 +80,25 @@ header p {
   padding-top: 20px;
 }
 
-nav {
-  width: 100%;
-  height: auto;
+footer {
+  background-color: #d4e0d6;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.logo {
-  max-width: 30px;
-}
-
-.navbar {
-  background-color: #f0ad8e;
-}
-
-.navbar-nav {
+.contenedor-footer {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+  padding: 30px;
 }
 
-.nav-link {
-  color: #3B2416;
-  transition: 0.3s;
-}
-.nav-link:hover {
-  color: #8C4930;
-}
-.nav-link:focus, .nav-link:active {
-  color: #02590f;
-}
-
-header nav ul li a {
-  font-weight: 500;
-}
-header nav ul li a:hover {
-  color: #8C4930;
-}
-header nav ul li a:active {
-  color: #02590f;
-}
-header nav ul li a:focus {
-  color: #02590f;
-  outline-color: #02590f;
+.info-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 30px;
 }
 
 @media (min-width: 1024px) {

@@ -1,67 +1,26 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-nav {
-    width: 100%;
-    height: auto;
+footer {
+    background-color: $color-footer;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
-.logo {
-    max-width: 30px;
-}
-
-.navbar {
-    background-color: $color-header;
-}
-
-.navbar-nav {
+.contenedor-footer {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+    padding: 30px;
 }
 
-.nav-link {
-    color: $color-texto-principal;
-    transition: 0.3s;
-
-    &:hover {
-        color: $color-secundario;
-    }
-
-    &:focus,
-    &:active {
-        color: $color-verde;
-    }
+.info-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 30px;
 }
-
-header {
-    nav {
-        ul {
-            li {
-                a {
-                    font-weight: 500;
-
-                    &:hover {
-                        color: $color-secundario;
-                    }
-
-                    &:active {
-                        color: $color-verde;
-                    }
-
-                    &:focus {
-                        color: $color-verde;
-                        outline-color: $color-verde;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
-
-
-
 
 @include desktop {
     .contenedor-footer {
